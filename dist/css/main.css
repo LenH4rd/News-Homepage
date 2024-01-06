@@ -148,19 +148,27 @@ textarea:not([rows]) {
 .topics img {
   width: 29.15%;
 }
-.topics span {
+.topics .one,
+.topics .two,
+.topics .three {
   width: 70.85%;
 }
-.topics span h2 {
+.topics .one h2,
+.topics .two h2,
+.topics .three h2 {
   font-size: 1.75rem;
   font-weight: 800;
   color: hsl(233, 8%, 79%);
 }
-.topics span a {
+.topics .one a,
+.topics .two a,
+.topics .three a {
   font-weight: 700;
   font-size: 1.25rem;
 }
-.topics span a:hover {
+.topics .one a:hover,
+.topics .two a:hover,
+.topics .three a:hover {
   color: hsl(5, 85%, 63%);
 }
 .topics--one, .topics--two, .topics--three {
