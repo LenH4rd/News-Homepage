@@ -1,7 +1,7 @@
 let menuButton;
 let menu;
 let closeButton;
-
+let body;
 document.querySelector(".menu__btn").onclick = function () {
   menuButton = document.querySelector(".menu__btn").ariaHasPopup;
   menuButton = Boolean(menuButton);
@@ -16,6 +16,7 @@ document.querySelector(".menu__btn").onclick = function () {
     menu = document.querySelector("menu").style.visibility = "visible";
 
     document.querySelector(".close__btn").setAttribute("aria-haspopup", "true");
+    body = document.querySelector("body").style.overflow = "hidden";
   }
 };
 
@@ -31,5 +32,7 @@ document.querySelector(".close__btn").onclick = function () {
       .querySelector("menu")
       .setAttribute("aria-expanded", "false");
     menu = document.querySelector("menu").style.visibility = "hidden";
+
+    body = document.querySelector("body").style.overflow = "scroll";
   }
 };
