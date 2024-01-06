@@ -1,0 +1,15 @@
+.link {
+  display: inline-block;
+  background-color: $primary-softRed;
+  text-transform: uppercase;
+  width: 50%;
+  height: 48px;
+  color: $neutral-offWhite;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.75rem 0;
+}
+
+.link:hover {
+  background-color: $neutral-verydarkBlue;
+}

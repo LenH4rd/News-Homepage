@@ -1,0 +1,335 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+.menu__btn {
+  width: 2.5rem;
+  height: 1.0625rem;
+}
+
+.close__btn {
+  width: 2rem;
+  height: 1.9375rem;
+}
+
+.link {
+  display: inline-block;
+  background-color: hsl(5, 85%, 63%);
+  text-transform: uppercase;
+  width: 50%;
+  height: 48px;
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 0.75rem 0;
+}
+
+.link:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.latest__news {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(233, 8%, 79%);
+  padding: 1.6875rem 1rem;
+}
+.latest__news div {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.latest__news h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(35, 77%, 62%);
+}
+.latest__news a {
+  color: hsl(36, 100%, 99%);
+  font-weight: 700;
+  font-size: 22px;
+}
+.latest__news a:hover {
+  color: hsl(35, 77%, 62%);
+}
+.latest__news p {
+  color: hsl(233, 8%, 79%);
+}
+.latest__news .latest__two {
+  border-top: 1px solid hsl(236, 13%, 42%);
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+.topics img {
+  width: 29.15%;
+}
+.topics span {
+  width: 70.85%;
+}
+.topics span h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: hsl(233, 8%, 79%);
+}
+.topics span a {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.topics span a:hover {
+  color: hsl(5, 85%, 63%);
+}
+.topics--one, .topics--two, .topics--three {
+  display: flex;
+  height: 8.0625rem;
+  gap: 1rem;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  color: hsl(236, 13%, 42%);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+  padding: 1.75rem 0 2rem 0;
+  max-width: 69.375rem;
+}
+
+menu {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 79.304%;
+  height: 100%;
+  padding: 27px 20px 0 24px;
+  z-index: 1;
+  background-color: hsl(36, 100%, 99%);
+}
+menu .close__btn {
+  margin-left: auto;
+  margin-bottom: 5.375rem;
+}
+menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+menu a {
+  font-size: 1.5rem;
+}
+menu a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  margin: 0 1rem 5rem;
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+article .article__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 38px;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (width >= 640px) {
+  .article__info {
+    display: flex;
+  }
+  .article__info h1 {
+    width: 50%;
+    font-size: 3rem;
+  }
+  .article__info .article__text {
+    width: 50%;
+    display: grid;
+    gap: 2.4375rem;
+  }
+}
+@media (width >= 1024px) {
+  header button {
+    display: none;
+  }
+  menu {
+    visibility: visible;
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  menu button {
+    display: none;
+  }
+  menu ul {
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+  }
+  menu li {
+    color: hsl(236, 13%, 42%);
+  }
+  menu a {
+    font-size: 0.9375rem;
+  }
+  .topics {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-start: 3;
+    grid-column: span 3;
+  }
+}
+@media (width >= 1280px) {
+  body {
+    align-items: center;
+  }
+  header {
+    width: 100%;
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0;
+    gap: 1.875rem;
+  }
+  .article__desc {
+    grid-column: span 2;
+    grid-row: span 2;
+    display: grid;
+    gap: 1.875rem;
+  }
+  .latest__news {
+    grid-row: span 2;
+  }
+}/*# sourceMappingURL=main.css.map */
